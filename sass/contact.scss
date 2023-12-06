@@ -1,0 +1,172 @@
+@use"home.scss";
+#contact{
+    padding: 70px 0px 110px;
+}
+// backtop star 
+#backtop {
+    z-index: 9999;
+    border: none;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    background-color: transparent;
+    background-color: #BB2339;
+    transition: 0.5s;
+}
+
+.backtop__link img {
+    display: block;
+    padding: 15px;
+    color: green;
+    font-size: red;
+}
+
+#backtop.backtop-show {
+    bottom: 50px;
+}
+
+// backtop star 
+.contact__wrapper{
+    &__top{
+        margin-bottom: 40px;
+        h1{
+            margin-bottom: 8px;
+            color: #242424;
+            text-align: right;
+            font-family: Cera Round Pro;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            letter-spacing: 1.92px;
+            text-transform: capitalize;
+        }
+    }
+}
+.contact__left__box{
+    &__card{
+        width: 100%;
+        display: flex;
+        padding: 25px 100px 27px 20px;
+        gap: 25px;
+        max-width: 420px;
+        height: 110px;
+        flex-shrink: 0;
+        border-radius: 14px;
+        border: 1px solid rgba(36, 36, 36, 0.10);
+        background: #FFF;
+        img{
+            border-radius: 50%;
+        }
+        &__content{
+            h4{
+                color: #242424;
+                font-family: Open Sans;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 34px;
+            }
+            p{
+                color: #242424;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+.contact__right__box{
+    padding: 40px 40px;
+    width: 100%;
+    max-width: 790px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    border: 1px solid rgba(36, 36, 36, 0.10);
+    background: #FFF;
+    h2{
+        margin-bottom: 16px;
+        color: #242424;
+        font-family: Open Sans;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px;
+    }
+    p{
+        margin-bottom: 40px;
+        max-width: 565px;
+        color: #242424;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    form{
+        margin-bottom: 15px;
+        input{
+            outline: none;
+            padding-left: 20px;
+            width: 100%;
+            max-width: 345px;
+            height: 58px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            border: 1px solid rgba(51, 34, 68, 0.10);
+            background: #FFF;  
+        }
+    }
+    .form-2{
+        textarea{
+            outline: none;
+            margin-bottom: 25px;
+            padding: 20px 0px 0px 20px;
+            width: 100%;
+            max-width: 710px;
+            height: 150px;
+            flex-shrink: 0;
+            border-radius: 14px;
+            border: 1px solid rgba(36, 36, 36, 0.10);
+            background: #FFF;
+        }
+    }
+    button{
+        border: none;
+        display: inline-flex;
+        padding: 18px 45px;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        gap: 10px;
+        border-radius: 39px;
+        background: #BB2339;
+    }
+}
+#map{
+    padding-bottom: 130px;
+    h3{
+        margin-bottom: 40px;
+        color: #000;
+        text-align: center;
+        font-family: Cera Round Pro;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 1.14px;
+        text-transform: capitalize;
+    }
+    img{
+        width: 100%;
+    }
+}

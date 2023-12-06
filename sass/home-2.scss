@@ -1,0 +1,69 @@
+@use"home.scss";
+// backtop star 
+#backtop {
+    z-index: 9999;
+    border: none;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    background-color: transparent;
+    background-color: #BB2339;
+    transition: 0.5s;
+}
+
+.backtop__link img {
+    display: block;
+    padding: 15px;
+    color: green;
+    font-size: red;
+}
+
+#backtop.backtop-show {
+    bottom: 50px;
+}
+
+// backtop star 
+.home-2-tap{
+    padding: 50px 10px;
+    width: 100%;
+    width: 428px;
+    height: 844px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background:  #BB2339;
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        .ap-tab-title {
+            h1 {
+                margin-bottom: 40px;
+                width: 100%;
+                max-width: 348px;
+                color: #FFF;
+                font-variant-numeric: lining-nums tabular-nums;
+                font-family: Cera Round Pro;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 54px;
+                text-transform: capitalize;
+            }
+        }
+        .ap-tab-item{
+            max-width: 250px;
+            gap: 10px;
+            border-radius: 100px;
+            border: 1px solid #FFF;
+        }
+        .ap-tab-item:hover{
+            background-color: white;
+        }
+        .ap-tab-item:hover .ap-tab-link{
+           color: black;
+        }
+
+    }
+}

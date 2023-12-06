@@ -1,0 +1,27 @@
+@use"home.scss";
+
+// backtop star 
+#backtop {
+    z-index: 9999;
+    border: none;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    background-color: transparent;
+    background-color: #BB2339;
+    transition: 0.5s;
+}
+
+.backtop__link img {
+    display: block;
+    padding: 15px;
+    color: green;
+    font-size: red;
+}
+
+#backtop.backtop-show {
+    bottom: 50px;
+}
+
+// backtop star 

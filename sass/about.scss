@@ -1,0 +1,62 @@
+@use"home.scss";
+.container-about{
+    max-width: 760px !important;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+// backtop star 
+#backtop {
+    z-index: 99999;
+    border: none;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    background-color: transparent;
+    background-color: #BB2339;
+    transition: 0.5s;
+}
+
+.backtop__link img {
+    display: block;
+    padding: 15px;
+    color: green;
+    font-size: red;
+}
+
+#backtop.backtop-show {
+    bottom: 50px;
+}
+
+// backtop star 
+#about{
+    position: relative;
+    padding: 70px 0px 210px;
+}
+.about__wrapper{
+    h1{
+        color: #242424;   
+        text-align:center;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-family: Cera Round Pro;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 1.92px;
+        text-transform: capitalize;
+    }
+    img{
+        margin-bottom: 40px;
+    }
+    .about__img{
+        max-width: 720px;
+        flex-shrink: 0;
+        border-radius: 10px;
+    }
+}
+.about__bottom__img{
+    position: absolute;
+    right:200px;
+}

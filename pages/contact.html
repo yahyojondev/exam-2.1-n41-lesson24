@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/contact.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<header class="position-fixed w-100">
+    <!-- <nav class="container">
+        <div class="navbar pt-4">
+            <img src="images/hedaer.logo.svg" alt="logo">
+            <ul class="nav__list d-flex align-items-center gap-5 d-none">
+                <li class="nav__item"><a href="#" class="nav__link">Menu</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">News</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact Us</a></li>
+                <li class="nav__item"><button class="nav__btn">Log in</button></li>
+            </ul>
+        </div>
+    </nav> -->
+    <div class="container">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../images/hedaer.logo.svg" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start w-100 bg-danger" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../images/hedaer.logo.svg" alt="logo"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <ul class="d-flex flex-column align-items-center justify-content-center gap-5">
+                        <li class="nav-item bg-white p-2 w-100" style="max-width: 200px;">
+                            <a class="nav-link text-black" aria-current="page" href="#">menu</a>
+                        </li>
+                        <li class="nav-item bg-white p-2 w-100" style="max-width: 200px;">
+                            <a class="nav-link text-black" href="#">News</a>
+                        </li>
+                        <li class="nav-item bg-white p-2 w-100" style="max-width: 200px;">
+                            <a class="nav-link text-black" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item bg-white p-2 w-100" style="max-width: 200px;">
+                            <a class="nav-link text-black" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item bg-white p-2 w-100" style="max-width: 200px;">
+                            <button class="nav-link text-black">Log in</button>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<body>
+     <button id="backtop">
+            <a class="backtop__link" href="#">
+                <img src="../images/top.svg" alt="">
+            </a>
+  </button>
+    <main>
+        <section id="contact">
+            <div class="container">
+                <div class="contsct__wrapper">
+                    <div class="contact__wrapper__top d-flex flex-column justify-content-center align-items-center">
+                        <h1>Contact Us</h1>
+                        <img class="w-100" style="max-width: 40px;" src="../images/news.logo.svg" alt="">
+                    </div>
+                    <div class="contact__wrapper__boxs d-flex flex-wrap justify-content-between gap-5">
+                        <div class="contact__left__box  d-flex flex-column gap-3 d-flex justify-content-center align-items-center ms-2 ms-lg-0">
+                            <div class="contact__left__box__card">
+                                <img src="../images/contact.tel.svg" alt="tel">
+                                <div class="contact__left__box__card__content">
+                                    <h4>Phone Number</h4>
+                                    <p>+1 212-344-1230</p>
+                                </div>
+                            </div>
+                            <div class="contact__left__box__card">
+                                <img src="../images/contact.sms.svg" alt="tel">
+                                <div class="contact__left__box__card__content">
+                                    <h4>Email Address</h4>
+                                    <p>eaturkish@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact__left__box__card">
+                                <img src="../images/contact.instagram.svg" alt="tel">
+                                <div class="contact__left__box__card__content">
+                                    <h4>Instagram</h4>
+                                    <p>eaturkish</p>
+                                </div>
+                            </div>
+                            <div class="contact__left__box__card">
+                                <img src="../images/contact.twitter.svg" alt="tel">
+                                <div class="contact__left__box__card__content">
+                                    <h4>Twitter</h4>
+                                    <p>eaturkish</p>
+                                </div>
+                            </div>
+                            <div class="contact__left__box__card">
+                                <img src="../images/contact.facebook.svg" alt="tel">
+                                <div class="contact__left__box__card__content">
+                                    <h4>Facebook</h4>
+                                    <p>eaturkish</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__right__box">
+                            <h2>Send Messege</h2>
+                            <p>If you have any questions, you can send us an SMS or contact us by phone you can also contact us via social networks.</p>
+                            <form class="d-flex align-items-center flex-wrap gap-3">
+                                <input type="name" placeholder="Your name">
+                                <input type="email" placeholder="Email address">
+                                <input type="number" placeholder="Phone number">
+                                <input type="text" placeholder="Subject">
+                            </form>
+                            <form class="form-2">
+                                <textarea name="Message" id="1" cols="75" rows="5" placeholder="Message"></textarea>
+                            </form>
+                            <button class="ms-5 ms-lg-0">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="map">
+            <h3>Find us by card</h3>
+            <img src="../images/map.png" alt="map">
+        </section>
+    </main>
+    <footer id="footer" class="footer position-relative">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer-box  position-absolute">
+                    <h6>Newsletter</h6>
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>And never miss latest Updates!</p>
+                    <div class="form">
+                        <input type="email" placeholder="Email Address">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+                <ul class="footer__list d-flex justify-content-between align-items-center">
+                    <li class="footer__item d-flex flex-column gap-3">
+                        <p class="text-white d-flex justify-content-center">Contact Us</p>
+                        <ul class="footer__item__list d-flex flex-column align-items-center gap-2">
+                            <li class="footer__item__list__item"><a href="#" class="nav-link text-white">9 W 53rd St, London, NY 10019, UK</a></li>
+                            <li class="footer__item__list__item"><a href="#" class="nav-link text-white">+1 212-344-1230</a></li>
+                            <li class="footer__item__list__item"><a href="#" class="nav-link text-white">+1 212-555-1230</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer__item d-flex flex-column gap-3">
+                        <img class="w-100" style="max-width: 336px;" src="../images/hedaer.logo.svg" alt="logo">
+                        <span class="footer__span text-white w-80">"The best way to find yourself is to lose yourself in the <br> service of others.”</span>
+                        <ul class="footer__item__list d-flex justify-content-center align-items-center gap-2">
+                            <img src="../images/facebook.svg" alt="logo">
+                            <img src="../images/twitter.svg" alt="logo">
+                            <img src="../images/instagramm.svg" alt="logo">
+                        </ul>
+                    </li>
+                    <li class="footer__item d-flex flex-column gap-3">
+                        <p class="text-white d-flex justify-content-center">Working Hours</p>
+                        <ul class="footer__item__list d-flex flex-column align-items-center gap-2">
+                            <li class="footer__item__list__item"><a href="#" class="nav-link text-white">Monday-Friday: <br>08:00 am -12:00 am</a></li>
+                            <li class="footer__item__list__item"><a href="#" class="nav-link text-white">Saturday-Sunday: <br> 07:00am -11:00 pm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
