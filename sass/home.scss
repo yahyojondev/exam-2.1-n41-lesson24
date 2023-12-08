@@ -25,14 +25,39 @@ button{
     margin: auto;
 }
 header{
+    background-color: #BB2339;
     height: 80px;
     z-index: 99;
-
+    
 }
 .navbar-shrink header{
     height: 60px;
     box-shadow: 0px 0px 5px 5px gray;
 }
+// dark start 
+.dark :is(#navbar,#home,#popular,#tab,#customer,#news,#modal,#galerry,#footer,#footer__box) {
+    background-color: black;
+}
+#mode-btn{
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    z-index: 99999999;
+    img{
+        width: 40px;
+        height: 40px;
+        
+    }
+    border: none;
+    background-color: transparent;
+}
+.dark :is(h2,h6,h3,span,p,h4,h5,a,) {
+    color: white !important;
+}
+.dark :is(#footer__box,#footer){
+   background-color: gray !important;
+}
+// dark start 
 
 // backtop star 
 #backtop {
@@ -57,27 +82,6 @@ header{
     bottom: 50px;
 }
 // backtop star 
-header{
-    background-color: #BB2339;
-}
-.nav__btn{
-    padding: 10px 40px;
-    gap: 10px;
-    border-radius: 100px;
-    color: #FFF;
-    font-family: Open Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 175%;
-    letter-spacing: 0.8px;
-    background-color: transparent;
-    text-transform: capitalize;
-    border: 1px solid #FFF;
-}
-.nav-item{
-    border-radius: 5px;
-}
 .nav-link{
     color: #FFF;
     font-family: Open Sans;
@@ -88,11 +92,7 @@ header{
     letter-spacing: 0.64px;
 }
 .nav__btn{
-    display: inline-flex;
     padding: 10px 40px;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
     font-family: Open Sans;
     font-size: 16px;
     font-style: normal;
@@ -103,6 +103,12 @@ header{
     text-transform: capitalize;
     border-radius: 100px;
     border: 1px solid #FFF;
+    transition: 0.5s;
+}
+.nav-item-respon{
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
 }
 #home{
     padding: 144px 0px 257px;
@@ -134,6 +140,7 @@ header{
         text-transform: capitalize;
     }
     p{
+        margin-bottom: 40px;
         max-width: 453px;
         color: #FFF;
         font-family: Open Sans;
@@ -143,7 +150,7 @@ header{
         line-height: 175%;
         letter-spacing: 0.64px;
     }
-    button{
+    .home__link{
         padding: 8px 32px;
         flex-direction: column;
         justify-content: center;
@@ -192,6 +199,7 @@ header{
     flex-shrink: 0;
     border-radius: 14px;
     background: #FFF;
+    transition: 0.5s;
     .carousel__kabab{
         margin-bottom: 10px;
         width: 100%;
@@ -223,6 +231,9 @@ header{
         line-height: normal;
     }
 }
+.carousl__card:hover{
+    background-color: transparent;
+}
 #team-carousel{
     position: relative;
 }
@@ -232,8 +243,9 @@ header{
     height: 40px;
     top: -60px;
     background-color: transparent;
-    border: 1px solid #646464;
+    border: 2px solid #646464;
     border-radius: 5px;
+    box-shadow: 0px  1px 1px 1px red;
 }
 #carousel :is(.owl-prev, .owl-next){
     position: absolute;
@@ -254,7 +266,7 @@ header{
     border-radius: 5px;
 }
 #team-carousel :is(.owl-prev, .owl-next):hover{
-    border:1px solid #BB2339
+    border:2px solid #BB2339
 }
 #team-carousel .owl-prev{
     right: 50px;
@@ -265,111 +277,53 @@ header{
     transition: 0.5s;
 }
 #team-carousel .owl-dot span{
-    width: 30px ;
+    width: 20px ;
     height: 10px;
-    background: gray;
+    background: #ddd;
     transition: all 0.5s;
 }
 #team-carousel .owl-dot.active span{
     display: flex;
     gap: 35px;
-    width: 50px;
-    background: red;
+    width: 30px;
+    background: #BB2339;
 }
-.bottom__card{
-    padding: 30px 50px 30px 20px;
-    width: 100%;
-    max-width: 410px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    border: 1px solid rgba(51, 51, 51, 0.10);
-    background: #FFF;
-    h4{
-        margin-bottom: 10px;
-        color: #333;
-        font-family: Inter;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 26px;
-    }
-    p{
-        margin-bottom: 21px;
-        width: 100%;
-        max-width: 340px;
-        color: #333;
-        font-family: Inter;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-        opacity: 0.7;
-    }
-    .carousel__list{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .carousel__item{
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 5px;
-        }
-    }
-} 
-// carousel star 
-// bottom carousel 
-.carousel__card{
-    padding: 30px 50px 30px 20px;
-    width: 100%;
-    max-width: 410px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    border: 1px solid rgba(51, 51, 51, 0.10);
-    background: #FFF;
-    h4{
-        color: #333;
-        font-family: Inter;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 26px;
-    }
-    p{
-        max-width: 340px;
-        color: #333;
-        font-family: Inter;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-        opacity: 0.7;
-    }
-}
-#bottom-carousel :is(.owl-prev,.owl-next){
-    background-color: transparent;
-    border: 1px solid #646464;
-    width: 40px;
-    height: 40px;
-}
-#bottom-carousel :is(.owl-prev, .owl-next):hover {
-    border: 1px solid #BB2339
-}
-// bottom carousel 
 // tab star 
-#tab{
+.tab{
     padding: 120px 0px;
+    &__wrapper{
+        &__absolute{
+            position: absolute;
+            right: 200px;
+            top: -50px;
+        }
+        h2{
+            margin-bottom: 60px;
+            margin-left: 35px;
+            color: #BB2339;
+            font-size: 48px;
+            // font-style: normal;
+            // font-weight: 500;
+            // line-height: normal;
+            // letter-spacing: 1.44px;
+            // text-transform: capitalize;
+        }  
+    }
 }
 .tab__card{
     border-radius: 14px;
     border: 1px solid rgba(36, 36, 36, 0.10);
     background: #FFF;
+    transition: 0.5;
+}
+.tab__card:hover{
+    transform: scale(0.9);
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
 .ap-tab-list{
     margin-bottom: 50px;
 }
 .ap-tab-item{
-    padding: 10px 30px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -384,9 +338,10 @@ header{
     color: white;
 }
 .ap-tab-link{
+    padding: 30px;
     color: #242424;
     font-family: Open Sans;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 175%;
@@ -428,12 +383,110 @@ header{
         }
     }
 }
+.bottom__card {
+    padding: 30px 50px 30px 20px;
+    width: 100%;
+    max-width: 410px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(51, 51, 51, 0.10);
+    background: #FFF;
+    
+    h4 {
+        margin-bottom: 10px;
+        color: #333;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px;
+    }
+    
+    p {
+        margin-bottom: 21px;
+        width: 100%;
+        max-width: 340px;
+        color: #333;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        opacity: 0.7;
+    }
+    
+    .carousel__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .carousel__item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 5px;
+        }
+    }
+}
+// carousel star 
+// bottom carousel 
+.carousel__card {
+    padding: 30px 50px 30px 20px;
+    max-width: 300px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(51, 51, 51, 0.10);
+    background: #FFF;
+    transition: 0.5s;
+    
+    h4 {
+        color: #333;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px;
+    }
+    
+    p {
+        max-width: 340px;
+        color: #333;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        opacity: 0.7;
+    }
+}
+.carousel__card:hover{
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#bottom-carousel :is(.owl-prev, .owl-next) {
+    background-color: transparent;
+    border: 2px solid #646464;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+#bottom-carousel :is(.owl-prev, .owl-next):hover {
+    border: 2px solid #BB2339
+}
+// bottom carousel 
 //  customer start 
 // news start 
-#news{
+.news{
     padding: 128px 0px;
 }
 .news__wrapper{
+    &__absolute{
+        position: absolute;
+        right: 200px;
+        top: -50px;
+    }
     &__top {
         h6 {
             font-family: Cera Round Pro;
@@ -466,6 +519,7 @@ header{
             border-radius: 14px;
             border: 1px solid rgba(36, 36, 36, 0.10);
             background: #FFF;
+            transition: 0.5s;
             img{
                 margin-bottom: 20px;
                 width: 100%;
@@ -497,8 +551,6 @@ header{
         button{
             width: 100%;
             max-width: 149px;
-            display: flex;
-            justify-content: center;
             color: #242424;
             font-family: Cera Round Pro;
             font-size: 16px;
@@ -510,26 +562,49 @@ header{
             padding: 8px 32px;
             border-radius: 100px;
             border: 1px solid var(--qizil, #BB2339);
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: #BB2339;
+            color: white;
         }
     }
+    .news__card:hover {
+        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+        transform: scale(0.9);
+    }
 }
-
 // news end
 // modal star
 #modal{
+    position: relative;
     padding: 120px 0px;
+    background: url(../images/modal.png)no-repeat;
+    background-size: cover;
 } 
+.modal__img{
+    width: 100%;
+    max-width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+}
+.modal__absolute__img{
+    position: absolute;
+    top: 50px;
+    left: 250px;
+}
 .modal-content{
     z-index: 1000000;
 }
 // modal end
 // galerry start
 #galerry{
-    margin-bottom: 200px;
-    padding: 128px 0px 136px;
+    padding: 128px 0px 200px;
     background: #F4F4F4;
 } 
 .galerry__wrapper{
+    display: flex;
+    gap: 64px;
     &__left{
         width: 100%;
         max-width: 491px;
@@ -569,10 +644,7 @@ header{
             letter-spacing: 0.64px;
         }
         button{
-            display: flex;
             padding: 8px 32px;
-            justify-content: center;
-            align-items: center;
             color: #242424;
             font-family: Cera Round Pro;
             font-size: 16px;
@@ -583,15 +655,34 @@ header{
             gap: 10px;
             border-radius: 100px;
             border: 1px solid var(--qizil, #BB2339);
+            transition: 0.5s;
         }
+                button:hover{
+                    background-color: #BB2339;
+                    color: white;
+                }
+    }
+    &__right{
+        width: 50%;
+    }
+    .gallery__img{ 
+        border-radius: 10px;  
+        max-width: 150px;
+        height: 240px;
+        flex-shrink: 0;
     }
 }
 // galerry end
 // footer start 
 #footer{
-    margin-top: 120px;
     padding: 292px 0px 40px;
     background: #BB2339;
+}
+.footer__wrapper{
+    &__list{
+        margin-bottom: 112px;
+        gap: 120px;
+    }
 } 
 .footer-box{
     width: 100%;

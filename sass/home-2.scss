@@ -6,7 +6,7 @@
     border-radius: 10px;
     position: fixed;
     right: 20px;
-    bottom: 50px;
+    bottom: -50px;
     background-color: transparent;
     background-color: #BB2339;
     transition: 0.5s;
@@ -23,11 +23,26 @@
     bottom: 50px;
 }
 
-// backtop star 
+// backtop end 
+.nav__link__btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 143px;
+}
+#tab{
+    padding-top: 227px ;
+    margin-bottom: 294px;
+}
+.tab__absolute{
+    position: absolute;
+    top:1750px;
+    left: 400px;
+}
 .home-2-tap{
     padding: 50px 10px;
     width: 100%;
-    width: 428px;
+    max-width: 428px;
     height: 844px;
     flex-shrink: 0;
     border-radius: 20px;
@@ -63,6 +78,9 @@
         }
         .ap-tab-item:hover .ap-tab-link{
            color: black;
+        }
+        .link__menu{
+            color: white;
         }
 
     }

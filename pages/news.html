@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/new.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/new.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
-<header  class="position-fixed w-100">
-    <!-- <nav class="container">
-        <div class="navbar pt-4">
-            <img src="images/hedaer.logo.svg" alt="logo">
-            <ul class="nav__list d-flex align-items-center gap-5 d-none">
-                <li class="nav__item"><a href="#" class="nav__link">Menu</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">News</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact Us</a></li>
-                <li class="nav__item"><button class="nav__btn">Log in</button></li>
+<header id="navbar" class="position-fixed w-100">
+  <div class="container">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../images/hedaer.logo.svg" alt="logo"></a>
+        <ul class="nav d-flex align-items-center d-none d-lg-flex">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">about us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="home-2.html">menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link text-white">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav__btn border-white text-white bg-transparent py-2 px-4">Log in</button>
+          </li>
+        </ul>
+        <button class="btn btn-danger bg-transparent border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img class="bg-transparent" src="../images/menu.svg" alt="menu"></button>
+        <div class="offcanvas offcanvas-start w-100 bg-secondary-subtle" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header bg-danger">
+            <img src="../images/hedaer.logo.svg" class="offcanvas-title" id="offcanvasScrollingLabel">
+            <button type="button" class="btn-close bg-danger " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav d-flex flex-column align-items-center justify-content-center gap-5">
+              <li class="nav-item-respon">
+                <a class="nav-link text-white" href="../index.html">Menu</a>
+              </li>
+              <li class="nav-item-respon">
+                <a class="nav-link text-white" href="about.html">about us</a>
+              </li>
+              <li class="nav-item-respon">
+                <a class="nav-link text-white" href="home-2.html">menu</a>
+              </li>
+              <li class="nav-item-respon">
+                <a href="contact.html" class="nav-link text-white">Contact Us</a>
+              </li>
+              <li class="nav-item-respon">
+                <a href="../index.html" class="nav-link text-white">Log in</a>
+              </li>
             </ul>
+          </div>
         </div>
-    </nav> -->
-    <div class="container">
-        <nav class="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../images/hedaer.logo.svg" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-start w-100 bg-danger" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../images/hedaer.logo.svg" alt="logo"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <ul class="d-flex flex-column align-items-center justify-content-center gap-5">
-                        <li class="nav-item bg-white p-2 w-100" style="max-width: 200px;">
-                            <a class="nav-link text-black" aria-current="page" href="#">menu</a>
-                        </li>
-                        <li class="nav-item bg-white p-2 w-100" style="max-width: 200px;">
-                            <a class="nav-link text-black" href="#">News</a>
-                        </li>
-                        <li class="nav-item bg-white p-2 w-100" style="max-width: 200px;">
-                            <a class="nav-link text-black" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item bg-white p-2 w-100" style="max-width: 200px;">
-                            <a class="nav-link text-black" href="#">Contact Us</a>
-                        </li>
-                        <li class="nav-item bg-white p-2 w-100" style="max-width: 200px;">
-                            <button class="nav-link text-black">Log in</button>
-                        </li> 
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+      </div>
+    </nav>
+  </div>
 </header>
 <body>
-   <button id="backtop">
-            <a class="backtop__link" href="#">
-                <img src="../images/top.svg" alt="">
-            </a>
+   <div class="container">
+        <div class="nav__link__btn">
+            <a href="../index.html" class="nav-link text-secondary">home</a>
+            <span class="text-secondary">|</span>
+            <a href="#" class="nav-link text-danger">news</a>
+        </div>
+    </div>
+  <button id="backtop">
+    <a class="backtop__link" href="#">
+      <img src="../images/top.svg" alt="">
+    </a>
   </button>
-    <main>
-         <section id="news">
+  <main>
+    <section id="news">
       <div class="container">
         <div class="news__wrapper">
           <div class="news__wrapper__top d-flex flex-column align-items-center justify-content-center">
@@ -76,8 +88,8 @@
                 <h5>tips for prepping and caring for your grill</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
                 <div class="span__link">
-                   <a class="nav-link text-danger" href="#">Read More</a>
-                   <span>16 Apr 2021</span>
+                  <a class="nav-link text-danger" href="contact.html">Read More</a>
+                  <span>16 Apr 2021</span>
                 </div>
               </div>
             </div>
@@ -87,8 +99,8 @@
                 <h5>tips for prepping and caring for your grill</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
                 <div class="span__link">
-                   <a class="nav-link text-danger" href="#">Read More</a>
-                   <span>16 Apr 2021</span>
+                  <a class="nav-link text-danger" href="contact.html">Read More</a>
+                  <span>16 Apr 2021</span>
                 </div>
               </div>
             </div>
@@ -98,8 +110,8 @@
                 <h5>tips for prepping and caring for your grill</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
                 <div class="span__link">
-                   <a class="nav-link text-danger" href="#">Read More</a>
-                   <span>16 Apr 2021</span>
+                  <a class="nav-link text-danger" href="contact.html">Read More</a>
+                  <span>16 Apr 2021</span>
                 </div>
               </div>
             </div>
@@ -109,8 +121,8 @@
                 <h5>tips for prepping and caring for your grill</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
                 <div class="span__link">
-                   <a class="nav-link text-danger" href="#">Read More</a>
-                   <span>16 Apr 2021</span>
+                  <a class="nav-link text-danger" href="contact.html">Read More</a>
+                  <span>16 Apr 2021</span>
                 </div>
               </div>
             </div>
@@ -120,8 +132,8 @@
                 <h5>tips for prepping and caring for your grill</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
                 <div class="span__link">
-                   <a class="nav-link text-danger" href="#">Read More</a>
-                   <span>16 Apr 2021</span>
+                  <a class="nav-link text-danger" href="contact.html">Read More</a>
+                  <span>16 Apr 202contact.html</span>
                 </div>
               </div>
             </div>
@@ -131,8 +143,8 @@
                 <h5>tips for prepping and caring for your grill</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
                 <div class="span__link">
-                   <a class="nav-link text-danger" href="#">Read More</a>
-                   <span>16 Apr 2021</span>
+                  <a class="nav-link text-danger" href="contact.html">Read More</a>
+                  <span>16 Apr 202contact.html</span>
                 </div>
               </div>
             </div>
@@ -142,8 +154,8 @@
                 <h5>tips for prepping and caring for your grill</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
                 <div class="span__link">
-                   <a class="nav-link text-danger" href="#">Read More</a>
-                   <span>16 Apr 2021</span>
+                  <a class="nav-link text-danger" href="contact.html">Read More</a>
+                  <span>16 Apr 202contact.html</span>
                 </div>
               </div>
             </div>
@@ -153,8 +165,8 @@
                 <h5>tips for prepping and caring for your grill</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
                 <div class="span__link">
-                   <a class="nav-link text-danger" href="#">Read More</a>
-                   <span>16 Apr 2021</span>
+                  <a class="nav-link text-danger" href="contact.html">Read More</a>
+                  <span>16 Apr 2021</span>
                 </div>
               </div>
             </div>
@@ -164,9 +176,8 @@
                 <h5>tips for prepping and caring for your grill</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
                 <div class="span__link">
-                   <a class="nav-link text-danger" href="#">Read More</a>
-                   <span>16 Apr 2021</span>
-                </div>
+                  <a class="nav-link text-danger" href="contact.html">Read More</a>
+                  <>16 Apr 201             </div>
               </div>
             </div>
           </div>
@@ -176,49 +187,52 @@
         </div>
       </div>
     </section>
-    </main>
-    <footer id="footer" class="footer position-relative">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer-box  position-absolute">
-                    <h6>Newsletter</h6>
-                    <h2>Subscribe to Our Newsletter</h2>
-                    <p>And never miss latest Updates!</p>
-                    <div class="form">
-                        <input type="email" placeholder="Email Address">
-                        <button>Subscribe</button>
-                    </div>
-                </div>
-                <ul class="footer__list d-flex justify-content-between align-items-center">
-                    <li class="footer__item d-flex flex-column gap-3">
-                        <p class="text-white d-flex justify-content-center">Contact Us</p>
-                        <ul class="footer__item__list d-flex flex-column align-items-center gap-2">
-                            <li class="footer__item__list__item"><a href="#" class="nav-link text-white">9 W 53rd St, London, NY 10019, UK</a></li>
-                            <li class="footer__item__list__item"><a href="#" class="nav-link text-white">+1 212-344-1230</a></li>
-                            <li class="footer__item__list__item"><a href="#" class="nav-link text-white">+1 212-555-1230</a></li>
-                        </ul>
-                    </li>
-                    <li class="footer__item d-flex flex-column gap-3">
-                        <img class="w-100" style="max-width: 336px;" src="../images/hedaer.logo.svg" alt="logo">
-                        <span class="footer__span text-white w-80">"The best way to find yourself is to lose yourself in the <br> service of others.”</span>
-                        <ul class="footer__item__list d-flex justify-content-center align-items-center gap-2">
-                            <img src="../images/facebook.svg" alt="logo">
-                            <img src="../images/twitter.svg" alt="logo">
-                            <img src="../images/instagramm.svg" alt="logo">
-                        </ul>
-                    </li>
-                    <li class="footer__item d-flex flex-column gap-3">
-                        <p class="text-white d-flex justify-content-center">Working Hours</p>
-                        <ul class="footer__item__list d-flex flex-column align-items-center gap-2">
-                            <li class="footer__item__list__item"><a href="#" class="nav-link text-white">Monday-Friday: <br>08:00 am -12:00 am</a></li>
-                            <li class="footer__item__list__item"><a href="#" class="nav-link text-white">Saturday-Sunday: <br> 07:00am -11:00 pm</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+  </main>
+  <footer id="footer" class="footer position-relative">
+    <div class="container">
+      <div class="footer-box d-none d-lg-block  position-absolute w-100">
+        <h6>Newsletter</h6>
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>And never miss latest Updates!</p>
+        <div class="form">
+          <input type="email" placeholder="Email Address">
+          <button>Subscribe</button>
         </div>
-    </footer>
-    <script src="../js/main.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+      </div>
+      <div class="footer__wrapper">
+        <ul class="footer__wrapper__list text-center d-lg-flex  align-items-center me-5 me-lg-0 ">
+          <li class="footer__item d-flex flex-column gap-3 mb-5 mb-lg-0">
+            <p class="text-white d-flex justify-content-center">Contact Us</p>
+            <ul class="footer__item__list d-flex flex-column align-items-center gap-2">
+              <li class="footer__item__list__item"><a href="#" class="nav-link text-white">9 W 53rd St, London, NY 10019, UK</a></li>
+              <li class="footer__item__list__item"><a href="#" class="nav-link text-white">+1 212-344-1230</a></li>
+              <li class="footer__item__list__item"><a href="#" class="nav-link text-white">+1 212-555-1230</a></li>
+            </ul>
+          </li>
+          <li class="footer__item d-flex flex-column align-items-center gap-3 mb-5 mb-lg-0">
+            <img class="w-100" style="max-width: 336px;" src="../images/hedaer.logo.svg" alt="logo">
+            <span class="footer__span text-white w-80">"The best way to find yourself is to lose yourself in the <br> service of others.”</span>
+            <ul class="footer__item__list d-flex justify-content-center align-items-center gap-2">
+              <img src="../images/facebook.svg" alt="logo">
+              <img src="../images/twitter.svg" alt="logo">
+              <img src="../images/instagramm.svg" alt="logo">
+            </ul>
+          </li>
+          <li class="footer__item d-flex flex-column gap-3 mb-5 mb-lg-0">
+            <p class="text-white d-flex justify-content-center">Working Hours</p>
+            <ul class="footer__item__list d-flex flex-column align-items-center gap-2">
+              <li class="footer__item__list__item"><a href="#" class="nav-link text-white">Monday-Friday: <br>08:00 am -12:00 am</a></li>
+              <li class="footer__item__list__item"><a href="#" class="nav-link text-white">Saturday-Sunday: <br> 07:00am -11:00 pm</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer__bottom  d-flex justify-content-center align-items-center">
+          <a class="nav-link text-white" href="#">2022 Pop online. All Rights reserved.</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
